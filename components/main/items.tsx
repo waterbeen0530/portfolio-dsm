@@ -13,7 +13,7 @@ export default function Items() {
       img: "/img/main/starFace.png",
       title: "창의적인 & 독창적인",
       content:
-        "“창의성은 가능성을 만들어내는 도구.”\n\n보다 더 다양한 분야에서 창의적인 아이디어를\n 발굴하고, 계속해서 새로운 도전과 성장을 위해\n노력할 것입니다.",
+        "“창의성은 가능성을 만들어내는 도구.”\n\n보다 더 다양한 분야에서 창의적인 아이디어를\n발굴하고, 계속해서 새로운 도전과 성장을 위해\n노력할 것입니다.",
     },
     {
       img: "/img/main/loveFace.png",
@@ -41,12 +41,12 @@ export default function Items() {
 
 const Container = styled.div`
   position: relative;
-  width: 530px;
-  height: 504px;
+  width: 550px;
+  height: 530px;
 `;
 const Wrapper = styled.div`
-  width: 290px;
-  height: 190px;
+  width: 320px;
+  height: 200px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -133,7 +133,8 @@ const Title = styled.div`
 `;
 const Text = styled.div`
   margin-top: 18px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   color: ${theme.nomalGrayColor};
   white-space: pre-wrap;
 `;
