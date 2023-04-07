@@ -1,23 +1,26 @@
 import styled from "@emotion/styled";
+import { theme } from "styles/theme";
 import Title from "./title";
 import DSM2021 from "./dsm2021";
 import DSM2022 from "./dsm2022";
-import { theme } from "styles/theme";
 import DSM2023 from "./dsm2023";
+import { Link } from "react-scroll";
 
 export default function ActivityContainer() {
   return (
-    <Container>
-      <Title />
-      <Wrapper>
-        <Frame>
-          <DSM2021 />
-          <DSM2023 />
-        </Frame>
-        <Line></Line>
-        <DSM2022 />
-      </Wrapper>
-    </Container>
+    <>
+      <Container id="activity">
+        <Title />
+        <Wrapper>
+          <Frame>
+            <DSM2021 />
+            <DSM2023 />
+          </Frame>
+          <Line></Line>
+          <DSM2022 />
+        </Wrapper>
+      </Container>
+    </>
   );
 }
 

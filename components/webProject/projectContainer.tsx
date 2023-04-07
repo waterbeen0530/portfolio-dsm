@@ -4,7 +4,7 @@ import Carousel from "./carousel";
 
 export default function ProjectContainer() {
   return (
-    <Container>
+    <Container id="project">
       <Title />
       <Carousel />
     </Container>

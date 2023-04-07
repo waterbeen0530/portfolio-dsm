@@ -30,7 +30,10 @@ export default function Carousel() {
             <Image src={arr.img3} />
           </Images>
           <TextBox>
-            <Title>{arr.title}</Title>
+            <Frame>
+              <Title>{arr.title}</Title>
+              <Aword>{arr.aword}</Aword>
+            </Frame>
             <Content>{arr.content}</Content>
             <DateBox>
               <strong>개발 기간</strong>
@@ -98,12 +101,27 @@ const TextBox = styled.div`
   flex-direction: column;
   color: ${theme.blackColor};
 `;
+
+const Frame = styled.div`
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
 const Title = styled.h1`
   font-size: 44px;
 `;
+
+const Aword = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+`;
+
 const Content = styled.div`
   margin-top: 14px;
   font-size: 20px;
+  white-space: pre-wrap;
 `;
 
 const Text = styled.div`

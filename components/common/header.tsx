@@ -1,14 +1,24 @@
 import styled from "@emotion/styled";
 import { theme } from "styles/theme";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
     <Container>
       <Logo src="/img/header/subinsu.png" />
       <TextBox>
-        <p>Introduction</p>
-        <p>project</p>
-        <p>Activity</p>
+        <Link to="intro" spy={true} smooth={true}>
+          <p>Introduction</p>
+        </Link>
+        <Link to="project" spy={true} smooth={true}>
+          <p>project</p>
+        </Link>
+        <Link to="activity" spy={true} smooth={true}>
+          <p>Activity</p>
+        </Link>
+        <Link to="tech" spy={true} smooth={true}>
+          <p>Tech & Stack</p>
+        </Link>
       </TextBox>
     </Container>
   );
@@ -16,7 +26,7 @@ export default function Header() {
 
 const Container = styled.div`
   width: 86%;
-  height: 140px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +42,7 @@ const TextBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  & > p {
+  & > a {
     font-size: 16px;
     font-weight: 700;
     &:hover {

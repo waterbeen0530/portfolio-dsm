@@ -4,7 +4,7 @@ import Items from "components/main/items";
 
 export default function MainContainer() {
   return (
-    <Container>
+    <Container id="intro">
       <Title />
       <Items />
     </Container>
